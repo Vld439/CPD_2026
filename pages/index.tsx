@@ -17,7 +17,7 @@ export default function Home() {
             <Show when="signed-out">
               <SignInButton mode="modal">
                 <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors">
-                  Sign In
+                  Iniciar Sesión
                 </button>
               </SignInButton>
             </Show>
@@ -27,7 +27,7 @@ export default function Home() {
                   href="/product"
                   className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-colors"
                 >
-                  Go to App
+                  Ir a la App
                 </Link>
                 <UserButton />
               </div>
@@ -38,25 +38,25 @@ export default function Home() {
         {/* Hero Section */}
         <div className="text-center py-24">
           <h2 className="text-6xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-6">
-            Generate Your Next
+            Genera tu siguiente
             <br />
-            Big Business Idea
+            Gran idea de negocio
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-400 mb-12 max-w-2xl mx-auto">
-            Harness the power of AI to discover innovative business opportunities tailored for the AI agent economy
+            Aproveche el poder de la IA para descubrir oportunidades comerciales innovadoras adaptadas a la economía de los agentes de IA.
           </p>
 
           <Show when="signed-out">
             <SignInButton mode="modal">
               <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all transform hover:scale-105">
-                Get Started Free
+                Empieza gratis
               </button>
             </SignInButton>
           </Show>
           <Show when="signed-in">
             <Link href="/product">
               <button className="bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 px-8 rounded-xl text-lg transition-all transform hover:scale-105">
-                Generate Ideas Now
+                Generar Ideas Ahora
               </button>
             </Link>
           </Show>

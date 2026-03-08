@@ -39,7 +39,7 @@ def idea(request: Request):
             base_url="https://api.groq.com/openai/v1",
         )
         
-        prompt = [{"role": "user", "content": "Reply with a new business idea for AI Agents, formatted with headings, sub-headings and bullet points"}]
+        prompt = [{"role": "user", "content": "Responda en español con una nueva idea de negocio para agentes de IA, formateada con encabezados, subtítulos y viñetas."}]
         
         stream = client.chat.completions.create(
             model="openai/gpt-oss-20b", 
